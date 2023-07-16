@@ -8,7 +8,7 @@ on:
       - main
   pull_request:
 env:
-  CHART_NAME: my-chart
+  CHART_NAME: wordpress
   IMAGE_TAG: 0.1.0
 jobs:
   build:
