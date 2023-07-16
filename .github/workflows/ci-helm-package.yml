@@ -11,10 +11,11 @@ env:
   CHART_NAME: my-chart
   IMAGE_TAG: 0.1.0
 jobs:
-  job:
+  build:
+    name: 'Build helm package'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
+      - uses: actions/checkout@v3
       - name: helm lint
         run: |
           helm lint .
