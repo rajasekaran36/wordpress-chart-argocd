@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: mysql:latest
+          image: mysql:8
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: {{ .Values.mysqlRootPassword }}
