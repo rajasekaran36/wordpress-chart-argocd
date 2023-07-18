@@ -34,19 +34,4 @@ spec:
       volumes:
         - name: wordpress-persistent-storage
           emptyDir: {}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: {{ template "wordpress.fullname" . }}
-  labels:
-    app: {{ template "wordpress.name" . }}
-spec:
-  type: NodePort
-  ports:
-    - port: 80
-      targetPort: 80
-      protocol: TCP
-      name: http
-  selector:
-    app: {{ template "wordpress.name" . }}
+
