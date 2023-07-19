@@ -46,7 +46,7 @@ helm package .
 
 5. Deploy the WordPress application using ArgoCD with application manifest described in `argocd/argocd-config.yaml` file as follow:
 ```bash
-argocd cluster add --config argocd-config.yaml
+sudo kubectl apply -n argocd -f argocd/argocd-config.yaml
 ```
 
 >### Helm Installation:
