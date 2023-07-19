@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/Majid-dev/wordpress-chart-argocd.git'
-    path: .
+    path: ./charts/wordpress
     targetRevision: HEAD
     helm:
       valueFiles:
