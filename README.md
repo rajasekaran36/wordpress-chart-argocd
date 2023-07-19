@@ -1,3 +1,7 @@
+![Release Charts](https://github.com/Majid-dev/wordpress-chart-argocd/actions/workflows/release.yml/badge.svg?branch=main)
+![Lint Test](https://github.com/Majid-dev/wordpress-chart-argocd/actions/workflows/lint-test.yml/badge.svg)
+![License](https://img.shields.io/github/license/Majid-dev/wordpress-chart-argocd)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/majid-dev/wordpress-chart-argocd)
 # WordPress Helm Chart
 
 This Helm chart allows you to deploy WordPress to your Kubernetes cluster using Helm and manage the deployment with ArgoCD.
