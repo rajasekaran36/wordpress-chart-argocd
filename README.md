@@ -59,6 +59,10 @@ To install the wordpress-chart chart:
 ```bash
 helm install my-wordpress wordpress-chart/wordpress
 ```
+or use the package you have made in previous section as following:
+```bash
+helm install my-wordpress wordpress-<`version`>.tgz
+```
 To uninstall the chart:
 ```bash
 helm delete my-wordpress
