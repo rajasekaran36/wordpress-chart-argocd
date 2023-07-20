@@ -61,7 +61,7 @@ helm install my-wordpress wordpress-chart/wordpress
 ```
 or use the package you have made in previous section as following:
 ```bash
-helm install my-wordpress wordpress-<`version`>.tgz
+helm install my-wordpress wordpress-<version>.tgz
 ```
 To uninstall the chart:
 ```bash
@@ -82,7 +82,7 @@ You can customize the WordPress deployment by modifying the values in the `value
 Once the WordPress application is deployed, access it using the NodePort or LoadBalancer IP associated with the WordPress service. You can forward localhost port to wordpress service to access wordpress via your machine:
 
 ```bash
-kubectl port-forward service/<service-name> 8080:80
+kubectl port-forward service/wordpress 8080:80
 ```
 
 After deploying, you can log in to the WordPress admin dashboard using the provided credentials.
